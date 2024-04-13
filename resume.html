@@ -7,7 +7,64 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="nav.css">
     <script src="nav.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        
+       body{
+        background-color:rgb(36, 35, 35);
+       }
+        .resume{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 22px;
+           
+        }
+        .resume-box{
+            display: flex;
+            justify-content: center;
+            margin-top: 3vh;
+            border-radius: 30px;
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            width: 54%;
+            color: white;
+        }
+        .resume-information{
+            height: 80vh;
+            margin-top: 7%;
+            width: 85%;
+            /* background-color: red; */
+        }
+        .education h2{
+            font-size: 1.6rem;
+        }
+       /* Styling the marker of unordered list items */
+
+/* Styling the marker of ordered list items */
+li::marker {
+  color: blue;
+  font-size: 20px;
+}
+.education span{
+    color: rgb(38, 255, 0);
+}
+.education ul{
+    /* margin-left: 22px; */
+    padding-inline-start: 4.2rem;
+    list-style-type: circle;
+    margin-top: 20px;
+    font-size: 18px;
+    height: 32vh;
+}
+.resume-skills{
+    margin-top: 20px;
+}
+.resume-skills ul{
+    list-style-type: circle;
+    padding-inline-start: 4.2rem;
+}
+
         </style>
 </head>
 
@@ -27,20 +84,81 @@
             </div>
         </div>
 
-        <div class="body">
-<h1>This is Resume page</h1>
+        <div class="resume">
+            <div class="resume-box">
+               <div class="resume-information">
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        
+                        <li>Texas College of Management & IT</li>
+                        <span>2022-2026</span><br>
+                        Bachleor of Information and Technology
+
+                        <li>Texas International College</li>
+                        <span>2020-2022</span><br>
+                        +2 in Management major Computer Science
+
+                        <li>St. George International School</li>
+                        <span>2022-2026</span><br>
+
+                        Secondary Education Examination (SEE)
+                    </ul>
+                    <hr>
+                </div>
+                <div class="resume-skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Html & CSS</li>
+                        <li>Photoshop</li>
+                        <li>Wordpress</li>
+                        <li>C Programming</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <hr style="margin-top: 4vh;">
+               </div>
+            </div>
         </div>
-    </div>
+  
+
+
+
+
     <footer class="footer">
+        <div class="foot">
         <div class="link">
-            <ul>
-                <li><a href="https://www.facebook.com/sandip.shah.9022662"><box-icon name='facebook-circle' type='logo' color='#0047ff'></box-icon></a></li>
-                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='instagram' type='logo' color='#ff0046' ></box-icon></a></li>
-                <li><a href=""><box-icon name='whatsapp-square' type='logo' color='#00ff7d' ></box-icon></a></li>
-                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='linkedin' type='logo' color='#0400ff' ></box-icon></a></li>
+            <h5>Follow me</h5>
+            <ul class="icons">
+                <li class="hov"><a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square'></i></a></li>
+                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href=""><i class='bx bxl-whatsapp'></i></a></li>
+                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-github'></i></a></li>
             </ul>
         </div>
+        <div class="link">
+            <h5>Links</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Graphics Design</a></li>
+                <li><a href="#">Wordpress</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="down">
+        <marquee>Copyright@2024 All right reserved to sandeyeppatel</marquee>
+    </div>
     </footer>
+</div>
 </body>
 
 </html>

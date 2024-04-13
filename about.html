@@ -6,9 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="nav.css">
-    <script src="nav.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        </style>
+        body{
+            color: white;
+        }
+        .skills-bar p {
+            margin-bottom: 3px;
+            margin-top: 12px;
+        }
+
+        .Mbody {
+            display: flex;
+            height: 96vh;
+        }
+
+        .Myphoto {
+            margin-left: 12vw;
+            margin-top: 15vh;
+        }
+
+        .Myphoto img {
+            border-radius: 44px;
+            height: 39vh;
+            
+        }
+
+        .Myinfo {
+            margin-top: 5vh;
+            margin-left: 15vw;
+        }
+        .mydetail-2{
+            margin-top: 4vh;
+        }
+
+        .Myinfo h3 {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .progress-bar {
+            border-radius: 2rem;
+            background-color: rgb(218, 211, 211);
+            width: 50%;
+            overflow: hidden; /* to hide overflowing progress */
+        }
+
+        .line {
+            height: 24px;
+            width: 0; /* initial width for animation */
+            background-color: rgb(185, 16, 16);
+            transition: width 1s ease; /* animate width change */
+
+        }
+
+        body {
+           background-color:rgb(36, 35, 35);
+            background-position: center;
+            background-size: cover;
+        }
+        .skill-box{
+          margin-left: 5%;
+        }
+
+        @keyframes fillAnimation {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -27,20 +94,114 @@
             </div>
         </div>
 
-        <div class="body">
-<h1>This is About page</h1>
+        <div class="Mbody">
+            <div class="Myphoto">
+                <img src="sandi.png">
+            </div>
+            <div class="Myinfo">
+                <div class="mydetail-1">
+                    <h3>Introduction</h3><br>
+                    <p>Hello! I'm <span style="font-weight: 700;">Sandip Patel</span>, currently pursuing studies in IT with a deep fascination <br>for web development and design. While I'm yet to accumulate professional experience,<br> my passion lies in crafting captivating and user-centric websites. Through dedicated<br> self-learning and hands-on practice, I'm actively honing my skills in various aspects of<br> web development and design. I'm excited to embark on this journey of growth and<br> exploration, eagerly anticipating the opportunity to contribute creatively to the digital<br> landscape."</p>
+                </div>
+                <div class="mydetail-2">
+                    <h2>My Skills</h2>
+
+                    <div class="skill-box">
+                        <div class="skills-bar">
+                            <p>HTML & CSS</p>
+                            <div class="progress-bar" id="html-css-progress">
+                                <div class="line" id="fill1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skills-bar">
+                            <p>Graphics Design</p>
+                            <div class="progress-bar" id="graphics-progress">
+                                <div class="line" id="fill2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skills-bar">
+                            <p>WordPress</p>
+                            <div class="progress-bar" id="wordpress-progress">
+                                <div class="line" id="fill3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skills-bar">
+                            <p>JavaScript</p>
+                            <div class="progress-bar" id="javascript-progress">
+                                <div class="line" id="fill4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skills-bar">
+                            <p>C-Programming</p>
+                            <div class="progress-bar" id="wordpress-progress2">
+                                <div class="line" id="fill5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="link">
-            <ul>
-                <li><a href="https://www.facebook.com/sandip.shah.9022662"><box-icon name='facebook-circle' type='logo' color='#0047ff'></box-icon></a></li>
-                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='instagram' type='logo' color='#ff0046' ></box-icon></a></li>
-                <li><a href=""><box-icon name='whatsapp-square' type='logo' color='#00ff7d' ></box-icon></a></li>
-                <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='linkedin' type='logo' color='#0400ff' ></box-icon></a></li>
-            </ul>
+        <div class="foot">
+            <div class="link">
+                <h5>Follow me</h5>
+                <ul class="icons">
+                    <li class="hov"><a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square'></i></a></li>
+                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href=""><i class='bx bxl-whatsapp'></i></a></li>
+                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-github'></i></a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact </a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphics Design</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="down">
+            <marquee>Copyright@2024 All right reserved to sandeyeppatel</marquee>
         </div>
     </footer>
+    <script>
+        function fillProgressBar(id, percentage) {
+            const fill = document.getElementById(id);
+            // Calculate the width based on the percentage provided
+            const width = (percentage / 100) * fill.parentElement.offsetWidth;
+            fill.style.width = width + 'px'; // Set the width in pixels
+        }
+
+// Example usage: fill the progress bars to different percentages
+fillProgressBar('fill1', 80);
+        fillProgressBar('fill2', 50);
+        fillProgressBar('fill3', 75);
+        fillProgressBar('fill4', 20);
+        fillProgressBar('fill5', 35);
+    </script>
     
 </body>
 

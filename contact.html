@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="nav.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="nav.js"></script>
     <style>
+        .wrapper{
+            color: white;
+        }
         .box {
             display: flex;
         }
@@ -16,6 +19,9 @@
         .left,
         .right {
             width: 50%;
+        }
+        .right{
+            margin-bottom: 30px;
         }
 
         .row {
@@ -71,12 +77,11 @@
         }
 
         input {
-            border-radius: 4px;
+            border-radius: 9px;
             background-color: rgb(255, 255, 255);
             margin-top: 22px;
-            height: 30px;
+            height: 43px;
             width: 15vw;
-            border: 2px black solid;
         }
 
         .Field-email {
@@ -87,26 +92,35 @@
             background-color: red;
             border-radius: 8px;
             height: 32px;
-            width: 120px;
+            width: 200px;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: red;
         }
 
-        button:hover {
-            background-color: green;
+        
+        button:active {
+            transform: translateY(4px);
+            background-color: rgb(21, 181, 77);
         }
 
         textarea {
             width: 31vw;
-            border-radius: 4px;
+            border-radius: 9px;
         }
 
         .bottom {
             display: flex;
             margin-left: 25%;
-            margin-top: 12px;
+            margin-top: 4vh;
+        }
+        .field{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         .Field-name input,
@@ -117,9 +131,26 @@
             padding-top: 2px;
              
         }
-
-
-
+        .icon{
+            font-size: 30px;
+        }
+footer{
+}
+body{
+    background-image:url(ctt.avif);
+    background-size: cover;
+    background-position: center ;
+}
+.right{
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black color */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 30px; /* Add rounded corners for a softer look */
+    width: 40%;
+}
+.right h3{
+   margin-left: 9vw;
+}
     </style>
 </head>
 
@@ -148,21 +179,21 @@
                     <div class="topic">
                         <h3>Reach out me</h3>
                         <div class="row">
-                            <div class="icon"><box-icon type='solid' name='user'></box-icon></div>
+                            <div class="icon"><i class='bx bxs-user-circle' ></i></div>
                             <div class="information">
                                 <h5>Name</h5>
                                 <p>Sandip Patel</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="icon"><box-icon type='solid' name='map'></box-icon></div>
+                            <div class="icon"><i class='bx bx-map' ></i></div>
                             <div class="information">
                                 <h5>Address</h5>
                                 <p>Balaju, Kathmandu</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="icon"><box-icon name='gmail' type='logo'></box-icon></div>
+                            <div class="icon"><i class='bx bxl-gmail' ></i></div>
                             <div class="information">
                                 <h5>E-mail</h5>
                                 <p>sanddeyeppatel@gmail.com</p>
@@ -200,14 +231,37 @@
             </div>
         </div>
         <footer class="footer">
+            <div class="foot">
             <div class="link">
-                <ul>
-                    <li><a href="https://www.facebook.com/sandip.shah.9022662"><box-icon name='facebook-circle' type='logo' color='#0047ff'></box-icon></a></li>
-                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='instagram' type='logo' color='#ff0046' ></box-icon></a></li>
-                    <li><a href=""><box-icon name='whatsapp-square' type='logo' color='#00ff7d' ></box-icon></a></li>
-                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><box-icon name='linkedin' type='logo' color='#0400ff' ></box-icon></a></li>
+                <h5>Follow me</h5>
+                <ul class="icons">
+                    <li class="hov"><a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square'></i></a></li>
+                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href=""><i class='bx bxl-whatsapp'></i></a></li>
+                    <li><a href="https://www.instagram.com/sande_yep?igsh=bnBnNWNtdzdqcXEy"><i class='bx bxl-github'></i></a></li>
                 </ul>
             </div>
+            <div class="link">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact </a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphics Design</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="down">
+            <marquee>Copyright@2024 All right reserved to sandeyeppatel</marquee>
+        </div>
         </footer>
 </body>
 
